@@ -2,12 +2,17 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
+    border-top: 5px solid $ocw-logo-color;
+    border-bottom: 1px solid $ocw-logo-color;
+    background-color: $ocw-logo-color;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
     position: relative;
+
+    a{
+      color: #fff;
+    }
 }
 
 .site-title {
@@ -19,8 +24,15 @@
 
     &,
     &:visited {
-        color: $grey-color-dark;
     }
+}
+
+a.site-title{
+  background: url('/images/ocw.png') no-repeat;
+  background-size: 56px 56px;
+  padding-left: 60px;
+  height: 56px;
+  font-weight: bold;
 }
 
 .site-nav {
@@ -32,7 +44,6 @@
     }
 
     .page-link {
-        color: $text-color;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the first one
@@ -92,7 +103,7 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    border-top: 1px solid $ocw-logo-color;
     padding: $spacing-unit 0;
 }
 
@@ -105,6 +116,11 @@
 .social-media-list {
     list-style: none;
     margin-left: 0;
+
+  li{
+    display: inline-block;
+    margin-right: 1rem;
+  }
 }
 
 .footer-col-wrapper {
@@ -116,7 +132,6 @@
 
 .footer-col {
     float: left;
-    margin-bottom: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
 }
 
@@ -167,6 +182,7 @@
 
 .page-heading {
     font-size: 20px;
+    color: #777;
 }
 
 .post-list {
